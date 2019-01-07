@@ -2,5 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.0"></a>
+# [0.1.0](https://github.com/MatheusRBarbosa/stopots/compare/v0.0.0...v0.1.0) (2019-01-07)
+
+
+### Features
+
+* **Search:** Search answers ([3f1f376](https://github.com/MatheusRBarbosa/stopots/commit/3f1f376))
+
+
+
 <a name="0.0.0"></a>
 # 0.0.0 (2019-01-07)
