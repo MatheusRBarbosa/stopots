@@ -9,6 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "commit": "git-cz",
+    "heroku-postbuild": "ng build",
     "custom-tests": "echo \"(No other custom tests yet.)\" && echo",
     "release": "standard-version"
   },
