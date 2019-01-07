@@ -1,0 +1,10 @@
+<label>
+    <form>
+      <div>
+        Busca:
+        <input type="text" maxlength="1" minlength="1" [formControl]="search" required>
+        <button (click)="searchLetter()">Procurar</button>
+      </div>
+    </form>
+{{resp}}
+</label>
