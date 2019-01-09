@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:heroku": "ng serve --port=$PORT",
     "build": "ng build --aot -prod",
     "test": "ng test",
     "lint": "ng lint",
