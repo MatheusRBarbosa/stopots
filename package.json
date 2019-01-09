@@ -4,13 +4,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "start:heroku": "ng serve",
+    "start:heroku": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "commit": "git-cz",
-    "heroku-postbuild": "ng build",
+    "heroku-postbuild": "ng build --aot -prod",
     "custom-tests": "echo \"(No other custom tests yet.)\" && echo",
     "release": "standard-version"
   },
