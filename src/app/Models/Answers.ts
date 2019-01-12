@@ -1,6 +1,7 @@
 export class Answers {
 
     id: string;
+    letra: string;
     nome: string[];
     fruta: string[];
     animal: string[];
