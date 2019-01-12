@@ -12,7 +12,7 @@ import { Answers } from '../Models/Answers'
 export class SearchComponent implements OnInit {
   search = new FormControl('a')
   resp: Answers = new Answers;
-  private configUrl = `http://api-stopots.herokuapp.com/resposta/`;
+  private configUrl = `https://api-stopots.herokuapp.com/resposta/`;
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
