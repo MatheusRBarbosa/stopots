@@ -1,10 +1,74 @@
 <label>
+  <div class="m-3">
+    Busca:
+  </div>
+  <div class="m-4">
     <form>
       <div>
-        Busca:
-        <input type="text" maxlength="1" minlength="1" [formControl]="search" required>
+        <input type="text" maxlength="1" minlength="1" [formControl]="search" size="1" required>
         <button (click)="searchLetter()">Procurar</button>
       </div>
     </form>
-{{resp}}
+  </div>
+  <div [hidden]="!resp.letra">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">1</th>
+          <th scope="col">2</th>
+          <th scope="col">3</th>
+          <th scope="col">4</th>
+          <th scope="col">5</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Nome</th>
+          <td *ngFor="let n of resp.nome">{{n}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Fruta</th>
+          <td *ngFor="let n of resp.fruta">{{n}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Animal</th>
+          <td *ngFor="let n of resp.animal">{{n}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Cor</th>
+          <td *ngFor="let n of resp.cor">{{n}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Profissão</th>
+          <td *ngFor="let n of resp.profissao">{{n}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Filme</th>
+          <td *ngFor="let n of resp.filme">{{n}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Objeto</th>
+          <td *ngFor="let n of resp.objeto">{{n}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Palavra em Inglês</th>
+          <td *ngFor="let n of resp.palavra_em_ingles">{{n}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Minha sogra é</th>
+          <td *ngFor="let n of resp.minha_sogra_e">{{n}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Carro</th>
+          <td *ngFor="let n of resp.carro">{{n}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Jogo</th>
+          <td *ngFor="let n of resp.jogo">{{n}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
 </label>
