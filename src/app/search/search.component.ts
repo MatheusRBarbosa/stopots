@@ -11,7 +11,7 @@ import { Answers } from '../Models/Answers'
 
 export class SearchComponent implements OnInit {
   search = new FormControl('a')
-  resp;
+  resp: Answers = new Answers;
   private configUrl = `http://api-stopots.herokuapp.com/resposta/`;
   constructor(private http: HttpClient) { }
 
